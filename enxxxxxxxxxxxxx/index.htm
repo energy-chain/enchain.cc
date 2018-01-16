@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://dagadam.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Data Coin Project</title>
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Quart Creative Agency">
+    <style>
+		body {  background-color: white;}
+		.pace {  z-index: -1;  position: fixed;  height: 100vh;  width: 100%;  top: 0;  left: 0;  background-color: #fff;  background-image: url('data:image/png;base64,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');  background-position: center center;  background-repeat: no-repeat;  background-size: 220px;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  transition: all .5s cubic-bezier(0.7,0,0.3,1);  }
+        .pace-progress {  position: absolute;  width: 100%;  height: 5px;  right: 100%;  top: 0;  background: #C2986B;  }
+        .pace-inactive {  background: #fff;  height: 0;  }
+        .pace-inactive .pace-progress{  display: none;  }
+
+    </style>
+
+    <script type="text/javascript">
+        window.paceOptions = { ajax: false,  restartOnPushState: false };
+    </script>
+
+    <!-- <title>Dagadam - Think Beyond</title> -->
+
+<!-- This site is optimized with the Yoast SEO plugin v4.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Dagadam is a smartwatch that entwines perfectly the ultimate technology with a comfortable and ergonomic design">
+<meta name="robots" content="noodp">
+<!--<link rel="canonical" href="http://dagadam.com/">-->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<!-- <meta property="og:title" content="Dagadam - Think Beyond"> -->
+<meta property="og:description" content="Dagadam is a smartwatch that entwines perfectly the ultimate technology with a comfortable and ergonomic design">
+<!--<meta property="og:url" content="http://dagadam.com/">-->
+<meta property="og:site_name" content="Dagadam">
+<!--<meta property="og:image" content="http://dagadam.com/wp-content/uploads/2017/02/dagadam.jpg">-->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Dagadam is a smartwatch that entwines perfectly the ultimate technology with a comfortable and ergonomic design">
+<!-- <meta name="twitter:title" content="Dagadam - Think Beyond"> -->
+<meta name="twitter:site" content="@dagadamtech">
+<!--<meta name="twitter:image" content="http://dagadam.com/wp-content/uploads/2017/02/dagadam.jpg">-->
+<meta name="twitter:creator" content="@dagadamtech">
+
+
+
+
+<!--<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/dagadam.com\/","name":"Dagadam","potentialAction":{"@type":"SearchAction","target":"http:\/\/dagadam.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>-->
+<!--<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","url":"http:\/\/dagadam.com\/","sameAs":["https:\/\/www.facebook.com\/dagadamtech\/","https:\/\/www.instagram.com\/dagadamtech\/","https:\/\/www.youtube.com\/channel\/UCqWYt6yDpSql5qq1E2cuTFA","https:\/\/twitter.com\/dagadamtech"],"@id":"#organization","name":"Dagadam","logo":""}</script>-->
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="http://s.w.org/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/dagadam.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="main-css" href="./Dagadam - Think Beyond_files/main.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./Dagadam - Think Beyond_files/jquery.js"></script>
+<script type="text/javascript" src="./Dagadam - Think Beyond_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./Dagadam - Think Beyond_files/pace.min.js"></script>
+<link rel="https://api.w.org/" href="http://dagadam.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dagadam.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dagadam.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.7.8">
+<link rel="shortlink" href="http://dagadam.com/">
+<link rel="alternate" type="application/json+oembed" href="http://dagadam.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdagadam.com%2F">
+<!--<link rel="alternate" type="text/xml+oembed" href="http://dagadam.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdagadam.com%2F&amp;format=xml">-->
+	<link rel="stylesheet" href="index.css">
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dagadam.com/?wordfence_logHuman=1&hid=28B4FF4865D0CF0D348257D19FFE2A92');
+</script>
+<script type="text/javascript" async="" src="./Dagadam - Think Beyond_files/saved_resource"></script><style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style></head>
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-162  pace-done" style="zoom: 1;"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<!--<div class="pace-activity"></div>-->
+</div>
+<header>
+    <div class="burger-nav"></div>
+    <!--<div class="logo">-->
+        <!--<a href="http://dagadam.com/">-->
+            <!--<h1>Dagadam-Think beyond</h1>-->
+            <!--<svg xmlns="http://www.w3.org/2000/svg" width="241.527" height="42.657" viewBox="0 0 241.527 42.657"><g id="logo" fill="#9397A3"><path d="M12.195 22.048H2.98V2.578h9.215c5.664 0 9.395 3.863 9.395 9.71 0 5.82-4.2 9.76-9.395 9.76zm0-17.696H4.782v15.92h7.413c4.097 0 7.593-2.635 7.593-7.933 0-5.247-3.262-7.988-7.593-7.988zM56.325 22.048l-3.42-6.943h-9.968l-3.42 6.943h-1.984l9.527-19.47h1.8l9.45 19.47h-1.985zM47.973 4.822l-4.15 8.508h8.272l-4.122-8.508zM87.792 22.127c-1.07.26-2.193.39-3.29.39-5.923 0-10.75-4.07-10.75-10.178 0-5.9 4.904-10.154 10.986-10.154 3.524 0 6.186 1.33 8.09 3.524l-1.147 1.278C89.958 5.16 87.844 3.96 84.74 3.96c-5.298 0-9.187 3.838-9.187 8.405 0 5.22 4.098 8.352 9.084 8.352.886 0 1.775-.104 2.61-.312 1.592-.392 4.28-1.593 4.28-3.577v-3.393h-7.022V11.66h8.796v5.142c0 2.95-3 4.698-5.506 5.325zM127.878 22.048l-3.42-6.943h-9.968l-3.42 6.943h-1.984l9.527-19.47h1.8l9.45 19.47h-1.985zm-8.352-17.226l-4.15 8.508h8.272l-4.122-8.508zM155.797 22.048h-9.215V2.578h9.215c5.664 0 9.395 3.863 9.395 9.71 0 5.82-4.2 9.76-9.395 9.76zm0-17.696h-7.413v15.92h7.413c4.097 0 7.593-2.635 7.593-7.933 0-5.247-3.262-7.988-7.593-7.988zM199.926 22.048l-3.42-6.943h-9.968l-3.42 6.943h-1.984l9.527-19.47h1.8l9.45 19.47h-1.984zm-8.352-17.226l-4.15 8.508h8.273l-4.123-8.508zM236.852 22.048V6.075l-7.882 13.233-7.857-13.233v15.973h-1.75V2.578h1.75l7.857 13.285 7.96-13.286h1.697v19.47h-1.775z"></path></g><g fill="#9397A3"><path d="M57.698 35.316h-1.713v4.376h-.556v-4.376h-1.714v-.534H57.7v.534zM69.794 34.78v4.91h-.556v-2.187h-2.855v2.188h-.556v-4.91h.556v2.182h2.855v-2.18h.556zM78.974 39.69h-.556v-4.91h.556v4.91zM91.832 34.78v4.91h-.645l-3.033-4.145v4.146h-.556v-4.91h.645l3.033 4.132v-4.13h.556zM102.437 36.754l2.21 2.937h-.697l-1.92-2.558-1.017.95v1.608h-.556v-4.91h.556v2.56l2.73-2.56h.785l-2.09 1.974zM125.64 38.4c0 .735-.556 1.292-1.676 1.292h-2.33v-4.91h2.204c1.157 0 1.55.705 1.55 1.298 0 .63-.312.95-.66 1.105.415.133.912.482.912 1.216zm-3.448-1.423h1.646c.512 0 .994-.252.994-.853 0-.408-.26-.816-.934-.816h-1.706v1.67zm2.892 1.38c0-.46-.34-.876-1.12-.876h-1.773v1.685h1.833c.675 0 1.06-.297 1.06-.81zM134.525 35.316v1.646h2.73v.54h-2.73v1.655h3.055v.534h-3.612v-4.91h3.612v.535h-3.055zM147.91 39.69h-.556V37.75l-2.062-2.967h.675l1.66 2.39 1.662-2.39h.674l-2.054 2.968v1.943zM162.393 37.236c0 1.394-1 2.514-2.492 2.514s-2.49-1.12-2.49-2.514c0-1.394 1-2.514 2.49-2.514s2.493 1.12 2.493 2.514zm-.556 0c0-1.105-.742-1.973-1.936-1.973s-1.935.868-1.935 1.973.742 1.973 1.936 1.973 1.937-.868 1.937-1.974zM174.942 34.78v4.91h-.645l-3.033-4.145v4.146h-.556v-4.91h.645l3.033 4.132v-4.13h.556zM187.89 37.236c0 1.536-1.082 2.455-2.253 2.455h-2.07v-4.91h2.07c1.17 0 2.254.922 2.254 2.456zm-.556 0c0-1.053-.675-1.93-1.72-1.93h-1.49v3.858h1.49c1.045 0 1.72-.874 1.72-1.928z"></path></g></svg>-->
+        <!--</a>-->
+    <!--</div>-->
+    <nav class="main-menu-container">
+		<a class="logostyle" ><img
+				src="images/logo.png" alt=""></a>
+        <ul id="menu-left" class="main-menu-left" style="opacity: 0"><li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-165"><a  ><img
+				src="logo.png" alt=""></a></li>
+<li id="menu-item-164" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-164"><a >Design</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-166"><a >Ticwear OS</a></li>
+</ul>
+		<ul id="menu-right" class="main-menu-right">
+			<li style="margin-left:40px;" id="menu-item-171" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-169">
+				<a href="../cn">中文</a>
+			</li>
+            <li id="menu-item-170" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-169">
+                <a href="#footer">Contcat Us</a>
+            </li>
+            <li id="menu-item-169" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-169">
+                <a href="#os">Partners</a>
+            </li>
+            <li id="menu-item-168" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-168">
+                <a href="#tuandui">Team</a>
+            </li>
+			<li id="menu-item-167" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-167">
+                <a  href="#about">Introduction</a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+    <!--<div class="burger">-->
+        <!--<span></span>-->
+        <!--<span></span>-->
+        <!--<span></span>-->
+    <!--</div>-->
+
+
+
+
+</header>
+<div class="main-content">
+		<div id="home">
+			
+			<div class="static-elements">
+				<!--<div class="left-center-bottom">Think Beyond »</div>-->
+				<!--<div class="center-bottom">-->
+					<!--<a href="http://dagadam.com/#about">-->
+						<!--<svg xmlns="http://www.w3.org/2000/svg" width="11.541" height="29.239" viewBox="0 0 11.541 29.239">-->
+							<!--<path id="arrow-down" fill="#C2986B" d="M5.77 28.084l-4.714-8.08h9.426l-4.713 8.08zm0 1.155c.115-.005.275-.063.336-.182l5.386-9.233c.148-.238-.06-.597-.337-.59h-5V.386C6.154.172 5.98 0 5.768 0c-.213 0-.385.172-.385.385v18.85H.383c-.276-.007-.48.35-.337.59l5.386 9.233c.09.114.183.18.337.18z"></path>-->
+						<!--</svg>-->
+					<!--</a>-->
+				<!--</div>-->
+				<!--<div class="watch ">-->
+					<!--<img class="animated fadeInDown" src="./Dagadam - Think Beyond_files/ceas-homepage.png" alt="Dagadam">-->
+				<!--</div>-->
+			</div>
+
+			<div class="slider-home">
+				
+				<div class="slide" style="">
+					<!--<div class="video"><iframe id="slider-video" src="./Dagadam - Think Beyond_files/201644852.html"></iframe></div>-->
+					<div class="video" style="z-index:1"><img src="images/P1.png" alt=""></div>
+					<div class="slide-info">
+	               <span class="title" style="font-weight: 900;">Data Coin</span>
+	               <p class="content">
+					   Based on the anonymous collection of information by blockchain distributed storage, Data Coin is an interactive data sharing tool bringing data together to explore new data models and to trade new data models on the service market without any charge.
+</p>
+					<!--<a data-video="201644852" href="http://dagadam.com/#" class="video-link"><svg xmlns="http://www.w3.org/2000/svg" width="41.977" height="41.977" viewBox="0 0 41.977 41.977"><path d="M18.316 15.56l8.526 5.43-8.526 5.41V15.56zm-1.066-3.05c-.544.03-.968.534-.95 1.132v14.692c-.023.877.846 1.43 1.524.968l11.544-7.346c.694-.418.694-1.517 0-1.935l-11.544-7.345c-.173-.118-.372-.175-.574-.164zM20.99 2.1c10.444 0 18.89 8.443 18.89 18.89s-8.445 18.89-18.89 18.89S2.1 31.434 2.1 20.99 10.542 2.1 20.99 2.1zm0-2.1C9.41 0 0 9.41 0 20.99s9.41 20.988 20.99 20.988 20.988-9.41 20.988-20.99S32.568 0 20.988 0z"></path></svg></a>-->
+	          </div></div>
+			</div>
+		</div>
+		<div class="page-section animate" id="about">
+			<div class="static-elements">
+				<!-- <div class="right-center">DAGADAM - Think Beyond</div> -->
+				<div class="compatibility">
+					<!-- <span>Compatible with</span> -->
+					<!-- <svg id="Layer_1"  viewBox="0 0 59.7 29.8"><style>.st0{fill:#707480;}</style><path class="st0" d="M15.6 4.5c1-1.2 1.6-2.8 1.5-4.5-1.4.1-3.1.9-4.1 2.1-.9 1-1.7 2.7-1.5 4.3 1.5.2 3.1-.7 4.1-1.9zM57.9 10.1c-1 0-1.8.8-1.8 1.8v7.5c0 1 .8 1.8 1.8 1.8s1.8-.8 1.8-1.8v-7.5c0-1-.8-1.8-1.8-1.8zM19.1 14.9c0-3.5 2.9-5.3 3-5.3-1.6-2.4-4.2-2.7-5.1-2.8-2.2-.2-4.3 1.3-5.4 1.3-1.1 0-2.8-1.3-4.6-1.2-2.4 0-4.6 1.4-5.8 3.5C-1.3 14.7.5 21 3 24.5c1.2 1.7 2.6 3.6 4.4 3.6C9.2 28 9.8 27 12 27c2.1 0 2.8 1.1 4.6 1.1 1.9 0 3.1-1.7 4.3-3.4 1.4-2 1.9-3.9 1.9-4 0-.1-3.7-1.6-3.7-5.8zM36.9 10.1c-1 0-1.8.8-1.8 1.8v7.5c0 1 .8 1.8 1.8 1.8s1.8-.8 1.8-1.8v-7.5c.1-1-.7-1.8-1.8-1.8zM39.3 22.1c0 1.1.9 2 2 2h1.1v4c0 1 .8 1.8 1.8 1.8s1.8-.8 1.8-1.8v-4h2.8v4c0 1 .8 1.8 1.8 1.8s1.8-.8 1.8-1.8v-4h1c1.1 0 2-.9 2-2V10.4H39.3v11.7zM51.2 3.2L52.4 1c.1-.1 0-.3-.1-.3-.1-.1-.3 0-.3.1L50.8 3c-1-.4-2.2-.7-3.4-.7-1.2 0-2.3.2-3.3.6L42.9.7c-.1-.1-.2-.2-.3-.1-.1.1-.2.2-.1.3l1.2 2.2c-2.6 1.2-4.3 3.7-4.3 6.6h16.2c-.1-2.8-1.8-5.3-4.4-6.5zm-7.5 3.7c-.4 0-.7-.3-.7-.7s.3-.7.7-.7.7.3.7.7-.3.7-.7.7zm7.4 0c-.4 0-.7-.3-.7-.7s.3-.7.7-.7.7.3.7.7-.3.7-.7.7z"></path></svg> -->				</div>
+			</div>
+
+				<div class="content-wrapper">
+				<div class="section-content">
+				<div class="section-image"></div>
+				<div class="section-info">
+					<p class="section-title" style="display: none">About the project</p>
+					<div class="content">
+						<p class="title" style="text-transform:none;color:#000;font-weight:900;font-size:40px;">Project Value</p>
+						<p>
+							Data Coin develops a smart contract based on a series of scientific analysis methods such as data collection - report analysis - statistical analysis - data mining and so on. The "one second summary" provides the most accurate reports for various industries and greatly facilitates the retrieval and use by individuals or organizations, greatly reducing the time required for data analysis, acquisition and cross-industry complexities.</p>
+					</div>
+					<span class="line" style="display: none">DAGADAM - THINK BEYOND</span>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section animate" id="design" style="background-repeat: no-repeat;background-position: center right;background-size: contain">
+				<div class="static-elements">
+					<!--<div class="left-top">Dagadam - Think Beyond</div>-->
+					<!--<div class="right-center">DAGADAM - THINK BEYOND</div>-->
+				</div>
+				<div class="content-wrapper">
+				<div class="section-content">
+					<div class="section-info">
+						<!--<p class="section-title">Atractive design</p>-->
+						<div class="content">
+							<div class="design-slider">
+
+<div class="slide">
+				<p class="title " style="text-transform:none;color:#000;font-weight:900; font-size:40px;text-align: left">Solve the Pain</p>
+				<p class="info " style="text-align: justify">
+					Human-generated data is invaluable toward business. Due to the covert nature of the ways that information being collected, the disclosure of personal information is common. The "touch-free + distributed collecting" component we developed with Data Coin can be a good way to circumvent this. The second isolation verification of the caller could better ensure the safety of data model output.</p>
+			</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="section-image">
+						<!--<img src="./Dagadam - Think Beyond_files/CeasuriSlide3.png" alt="Atractive design">-->
+						<img src="images/P3.png" alt="">
+					</div>
+				</div>
+				</div>
+
+
+
+	<div class="page-section animate" id="technical">
+		<div class="static-elements">
+			<!-- <div class="right-center">DAGADAM - THINK BEYOND</div> -->
+		</div>
+		<div class="content-wrapper">
+			<div class="section-content">
+				<div class="section-image ">
+					<img style="width:400px;height:400px;" src="images/screenshot.png" alt="ABOUT THE PROJECT">
+				</div>
+				<div class="section-info">
+					<!--<p class="section-title">ABOUT THE PROJECT</p>-->
+					<img src="images/logo1.png" alt="" style="width: 140px;">
+					<div class="section-slider">
+						<div class="slider">
+
+							<div class="slide">
+								<div class="content">
+									<p class="title" style="text-transform:none;color:#000;font-weight:900; font-size:40px;">Data Coin The Initial Stage
+									</p>
+									<div class="info ">
+										<p style="text-align: justify">
+											Now reaching a cooperation with China's hottest app - “I CARE HEALTH MONITOR”, the trial running of Data Coin protocol components and caller application process will gradually expand the data access and caller relationship. " I CARE HEALTH MONITOR " has the world's largest users of medical APPs, with more than 20 million users worldwide. The " I CARE HEALTH MONITOR " APP uses mobile phone cameras, gyroscopes, accelerometers and microphones to complete heart rate, blood pressure, vital capacity, blood support and other health data collection and testing.</p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+			<div class="content-wrapper">
+				<div class="section-content">
+					<div class="section-info">
+						<!--<p class="section-title">Atractive design</p>-->
+						<div class="content">
+							<div class="design-slider">
+
+								<div class="slide">
+									<p class="title " style="text-transform:none;color:#000;font-weight:900; font-size:40px;text-align: left">DTC Introduction</p>
+									<p class="info " style="text-align: justify">
+										The DTC is a blockchain protocol tokens for data exchange.DTC’s early development relies on the "I CARE HEALTH MONITOR" APP, later it will gradually expand the area of application.</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="section-image">
+						<!--<img src="./Dagadam - Think Beyond_files/CeasuriSlide3.png" alt="Atractive design">-->
+						<img STYLE="height:250px;width:250px;" src="images/DTC.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="page-section animate" id="technical">
+				<div class="static-elements">
+					<!-- <div class="right-center">DAGADAM - THINK BEYOND</div> -->
+				</div>
+				<div class="content-wrapper">
+					<div class="section-content">
+						<div class="section-image ">
+							<img style="height:290px;width:290px;" src="images/mofang.png" alt="ABOUT THE PROJECT">
+						</div>
+						<div class="section-info">
+							<!--<p class="section-title">ABOUT THE PROJECT</p>-->
+							<div class="section-slider">
+								<div class="slider">
+
+									<div class="slide">
+										<div class="content">
+											<p class="title" style="text-transform:none;color:#000;font-weight:900;font-size:40px;">Business Model Design
+											</p>
+											<div class="info ">
+												<p style="text-align: justify">
+													Data Contribution - Tokens Reward - Data Buying - Token Consumption.
+													Users use "I CARE HEALTH MONITOR" to upload body data for token rewards while medical institutions, insurance companies and research institutes use the big data of health need to consume the DTC.
+													Advantages:<br/>
+													1. 20 million users worldwide.<br/>
+													2. Heartbeat mining and data mining contribution.<br/>
+													3. With a low threshold approach to attract a large number of users into the cryptocurrency circle, which is conducive to ecological construction.</p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+</div>
+
+
+
+<div class="tuandui" id="tuandui" style="background:#fff;">
+	<p class='title' style="text-transform:none;color:#000;font-weight:900;font-size:40px;">Team</p>
+	<ul>
+		<li><div  style="width:100%;height:68%; background:url(images/founder1.png) top center no-repeat"  alt=""></div> <div class="des"> <h3>Max Chan</h3>CEO</div></li>
+		<li><div  style="width:100%;height:68%; background:url(images/founder2.png) top center no-repeat"  alt=""></div> <div class="des"> <h3>Michael Lee</h3>CMO</div></li>
+		<li><div  style="width:100%;height:68%; background:url(images/founder3.png) top center no-repeat"  alt=""></div> <div class="des"> <h3>Clark Chow</h3>CTO</div></li>
+		<li><div  style="width:100%;height:68%; background:url(images/founder4.png) top center no-repeat"  alt=""></div> <div class="des"> <h3>Phil Hellmuth</h3>Consultant</div></li>
+		<li><div  style="width:100%;height:68%; background:url(images/founder5.png) top center no-repeat"  alt=""></div> <div class="des"> <h3>Daniel Desmond</h3>Early Investor</div></li>
+
+
+	</ul>
+
+</div>
+<div class="section-content" style='margin:60px 0; display: block'>
+
+	<div class="section-info threeinfo" style="margin: 0 auto">
+		<!--<p class="section-title">Atractive design</p>-->
+		<!--<div class="content" id="cctv1">
+			<div class="design-slider">
+
+				<div class="slide">
+					<p class="title " style="text-transform:none;color:#000;font-weight:900;">Releasing Number and Proportion</p>
+					<p class="info ">
+						DTC issued 1 billion with no further additional releasing.
+					</p>
+				</div>
+
+			</div>
+		</div>-->
+		<div style="text-align: center;text-transform:none;color:#000;font-weight:900;font-size:40px;">Releasing Number and Proportion</div>
+		<div  style="text-align: center;margin:20px 0;font-size:20px;">DTC issued 1 billion with no further additional releasing.</div>
+	</div>
+	<div class="section-image threeimage" id="cctv" style="margin: 0 auto;background: url(images/p44.png) center center no-repeat;background-size: contain;height: 400px;
+    width: 90%;">
+		<!--<img src="./Dagadam - Think Beyond_files/CeasuriSlide3.png" alt="Atractive design">-->
+		<!--<img src="images/fenpeifangan.png" alt="">-->
+	</div>
+</div>
+		<!--Start OS-->
+		<div class="page-section animate" id="os" style="background-color: #fff">
+				<div class="static-elements">
+					<!--<div class="left-top">Dagadam – Mobvoi</div>-->
+					<!--<div class="right-center">DAGADAM - THINK BEYOND</div>-->
+					<div class="frame">
+						<!--<img class="watch-frame" src="./Dagadam - Think Beyond_files/backceasurimici.png" alt="">-->
+						<!--<span>powered by <br> mobvoi</span>-->
+						<!--<img class="poweredby" src="./Dagadam - Think Beyond_files/logo-mobvoi.png" alt="Powered bt Mobvoi">	-->
+					</div>
+				</div>
+				<!--<div class="section-name"><svg xmlns="http://www.w3.org/2000/svg" width="100px" height="22px" viewBox="0 0 557.8 124.6"><style>.st1{fill:#EF2929;}</style><path d="M231.6 124.3c-1-1.9-2-3.7-2.9-5.6-9-21.4-18-42.9-27.1-64.3-1.7-4-3.6-7.8-8.8-8.1-.7 0-1.4-1.3-2.1-2.1 1-.6 1.9-1.7 3-1.7 4.7-.3 9.4-.3 14-.3H227l.6 1.8c-1.5.8-2.8 2.1-4.4 2.5-5.8 1.5-7.1 2.9-5.1 8.3 6 15.9 12.3 31.8 18.5 47.6.4 0 .8 0 1.1-.1.8-1.8 1.7-3.6 2.4-5.5 3.9-10.1 8.1-20.2 11.6-30.5 1.1-3.3 1.2-7.3.5-10.8-.8-4-3.4-7.1-8.2-7.5-1-.1-1.9-1.2-2.8-1.9.9-.7 1.7-2 2.6-2.1 9.5-.3 19-.3 28.5-.3.9 0 1.9.7 4.2 1.7-2.6 1.4-4.2 2.3-5.8 3.1-3.3 1.6-4.8 3.6-3 7.5 6.1 14.1 12 28.4 18.2 43.3.9-1.5 1.4-2.4 1.8-3.3 5.5-13.4 11-26.7 16.4-40.1 2.6-6.3 1.8-7.6-5-9.4-1.1-.3-2-1-4.2-2.2 2.4-.9 3.5-1.6 4.7-1.6 6.2-.2 12.4-.2 18.6-.1 1 0 2.1.9 3.1 1.4-.7.9-1.2 2.3-2.2 2.6-6.4 2.3-9.1 7.4-11.4 13.3-7.8 20-15.8 39.9-23.8 59.9-.6 1.4-1.7 2.6-2.6 4-1-1.3-2.5-2.4-3.1-3.9-6.8-16.2-13.6-32.5-20.3-48.8-.4-.9-.9-1.8-1.6-3.4-7.8 19.3-15.4 38-22.9 56.6h-1.8zM484.3 122.3c-1.6.4-3.2 1.1-4.9 1.1-4.3.2-8.5.3-12.8.2-6.6-.1-8.8-2.2-9.8-8.7-.1-.9-.3-1.8-1.5-3.4-.8 1.1-1.4 2.3-2.3 3.3-7.2 7.4-16.1 9.8-26 8.4-8.1-1.1-14.1-7.2-15.8-15.4-1.6-7.9 2-16.9 9.6-21.2 5-2.9 10.6-4.6 15.9-6.8 4.7-1.9 9.6-3.5 14.1-5.8 7-3.6 8.6-13.9 3.7-21.8-4.3-6.9-14.2-9.6-20.1-4.8-2.4 1.9-3.5 5.6-4.8 8.7-.8 2-.6 4.4-1.3 6.4-1.1 3.3-3.5 5.4-7.2 4.9-3.4-.5-6.4-2.5-6.3-6 .1-3.4 1-7.1 2.7-9.9 1.4-2.4 4.3-4.4 6.9-5.7 11.5-5.3 23.5-5.3 35.4-1.3 6.9 2.4 10 8 10.2 15.1.2 9.4-.1 18.7 0 28.1.1 7 .2 14 1 21 .9 7.8 3 9.6 10.7 10.9.9.2 1.7.9 2.6 1.3v1.4zm-27.7-47c-7 4.1-13.8 7.8-20.1 12-3.5 2.3-6.7 5.4-9.1 8.8-4 5.5-3.1 11.7 1.6 17 3.8 4.2 10.4 5.4 15.9 2.7 6.8-3.3 11.1-8.8 11.6-16.4.5-7.8.1-15.8.1-24.1zM369.6 78.7c-7.7 0-15.4.1-23.1 0-2.6 0-3.5.8-3.7 3.5-.6 8.6.8 16.7 5.9 23.9 8.4 12 22.8 15 35.3 7.3 2.8-1.7 5.2-4.1 7.9-6 .8-.6 2.1-.4 3.2-.6-.1 1.1.3 2.6-.3 3.3-1.6 2.2-3.4 4.5-5.5 6-12.9 9.2-27 11.3-41.3 4.2-14.8-7.4-20.9-20.5-20.6-36.7.4-18.2 11.1-34 26.6-39.8 19.6-7.3 42.7 8 43.5 28.8.1 3.6-.8 5.4-4.8 5.3h-2c-.1.2-21.1.5-21.1.8zm-26.4-5.5c11.2 0 22.1.2 33-.1 3.2-.1 5.5-2.3 6.3-5.7 1.6-6.5-2.3-15.1-8.6-19.3-5.9-3.9-12.5-3.6-18.5.7-8.3 6-10.9 14.7-12.2 24.4zM490.8 43.3c1.1-.2 2.1-.7 3.2-.7 6.9-.1 13.8 0 20.6-.3 3.2-.1 4.1 1.3 4.1 4.1 0 4.7 0 9.5.8 14.5 1.2-1.7 2.4-3.4 3.7-5.1 4.5-6.1 9.8-11.2 17.5-13 10.1-2.4 18.2 4.4 17 14.2-.4 3.2-1.9 5.5-5.1 6.2-3.3.8-5.8-.4-7.7-3.3-6.2-9.6-11.8-10-19-1-4.2 5.1-6.9 10.8-6.9 17.7.1 11.8-.1 23.6 0 35.5 0 6 1.3 7.1 7.5 8.1.7.1 1.4.2 2 .4.4.1.7.4 2.1 1.3-2.4.9-3.7 1.8-5 1.8-10 .1-20.1.1-30.1 0-1.1 0-2.1-1.1-3.2-1.6 1-.6 1.9-1.4 2.9-1.6 8.1-1.5 8.4-1.5 8.5-10.1.2-17.5.1-34.9 0-52.4-.1-7.4-2.7-10.2-9.9-11.9-1-.2-1.9-.8-2.8-1.2-.2-.7-.2-1.1-.2-1.6zM111.5 83.9c.3-31.3 32.4-51.2 59.2-36.6 4 2.2 7.3 4.9 8.6 9.5 1.2 4.2-.5 8.4-3.9 9.8-3.1 1.3-6.3-.5-8.4-4.7-1-2-1.6-4.1-2.5-6.1-4.4-10.1-14.8-13.1-23.9-6.9-5.7 3.8-9.8 9.1-11.5 15.7-3.9 15.1-2.5 29.5 6.5 42.7 5.4 8 13 12.9 22.8 11 9.8-1.9 16.3-8.1 18.5-18.3.2-1.1 1.5-1.9 2.3-2.9.5 1.2 1.6 2.5 1.5 3.7-.4 9.8-11.8 21.1-22.7 22.7-20.4 3-40.5-10.5-45.3-30.6-.8-2.9-.8-6-1.2-9zM63.3 120.5c2.3-.6 4.5-1.5 6.8-1.8 4.3-.6 6.4-2.8 6.4-7.1.1-18.1.3-36.3.1-54.4-.1-6.8-2.4-8.8-9.3-9.6-1.9-.2-4.1-.3-3.5-2.8.3-1.1 2.4-2.3 3.8-2.4 6.2-.3 12.4 0 18.6-.1 3-.1 4 1 4 4.1-.2 20.6-.1 41.3-.1 61.9 0 9 1.1 10.1 9.8 11.4 1.4.2 2.6 1.5 3.8 2.3-1.4.5-2.8 1.3-4.2 1.3-10.7 0-21.4-.1-32.1-.3-1.3 0-2.7-.4-4-.6 0-.6-.1-1.3-.1-1.9z"></path><path class="st1" d="M69.9 0h19.6v19.6L69.9 0z"></path><path d="M55.5 110.7c-2.9 1.3-5.8 2.8-8.8 3.8-9.1 3.2-16.3-.9-18.1-10.3-.3-1.6-.7-3.3-.7-4.9-.2-15.7-.2-31.4-.3-47.1 0-2.3.8-3.2 3.2-3.2 5.9.1 11.8.1 17.7 0 1.5 0 3.5-.4 4.3-1.4 2.1-2.9.7-5.2-3.2-5.3-7.1-.1-14.2 0-21.8 0v-5.8c.1-5.9.2-11.8.1-17.8 0-.9-.8-1.9-1.5-2.8-2.7 15-12.8 27.2-26.4 32.8 1.1.4 2.1.7 3.2.8 3.5.2 7.1.1 11.1.1.1.7.3 1.2.3 1.7-.2 15.7-.6 31.4-.3 47.1.1 5.3 1.4 10.6 2.9 15.7 1.5 5 5.5 8.4 10.7 9.4 10.3 2.1 19.4-.6 26.7-8.4.9-.9 1.2-2.3 1.8-3.5-.4-.3-.6-.6-.9-.9z"></path></svg></div>-->
+				<div class="section-desc">									
+					<p class="title" style="text-transform:none;color:#000;font-weight:900;font-size:40px;">Partners</p>
+				    <!--<p>-->
+<!--Through the numerous available functions, this smartwatch will become your daily partner,-->
+<!--being reliable for every task you have to accomplish. -->
+<!--</p>-->
+				</div>
+		<div class="watch-faces slick-initialized slick-slider">
+				
+
+
+
+
+		<div aria-live="polite" class="slick-list">
+		<div class="slick-track" role="listbox" style="opacity: 1; width: 100.5%; ">
+			<div class="watch-face slick-slide slick-cloned" tabindex="-1" role="option" aria-describedby="slick-slide04" style="" data-slick-index="-1" aria-hidden="true">
+				<div class="image">
+					<div  alt="RESTAURANTS" class='imgrest1'></div>
+				</div>
+				<!--<div class="feature">-->
+					<!--<p class="feature-name">REMINDERS</p>-->
+				<!--</div>-->
+			</div><div class="watch-face slick-slide slick-active" tabindex="-1" role="option" aria-describedby="slick-slide00" style="" data-slick-index="0" aria-hidden="false">
+				<div class="image">
+					<div  alt="RESTAURANTS" class='imgrest2'></div>
+				</div>
+				<!--<div class="feature">-->
+					<!--<p class="feature-name">Weather</p>-->
+				<!--</div>-->
+			</div><div class="watch-face slick-slide slick-current slick-active slick-center" tabindex="-1" role="option" aria-describedby="slick-slide01" style="" data-slick-index="1" aria-hidden="false">
+				<div class="image">
+					<div  alt="RESTAURANTS" class='imgrest3'></div>
+				</div>
+				<!--<div class="feature">-->
+					<!--<p class="feature-name">CALL</p>-->
+				<!--</div>-->
+			</div><div class="watch-face slick-slide slick-active" tabindex="-1" role="option" aria-describedby="slick-slide02" style="" data-slick-index="2" aria-hidden="false">
+				<div class="image">
+					<div  alt="RESTAURANTS" class='imgrest4' ></div>
+				</div>
+				<!--<div class="feature">-->
+					<!--<p class="feature-name">RESTAURANTS</p>-->
+				<!--</div>-->
+			</div><div class="watch-face slick-slide" tabindex="-1" role="option" aria-describedby="slick-slide03" style="" data-slick-index="3" aria-hidden="true">
+				<div class="image">
+					<div  alt="RESTAURANTS" class='imgrest5' style=""></div>
+				</div>
+				<!--<div class="feature">-->
+					<!--<p class="feature-name">TAXI</p>-->
+				<!--</div>-->
+			</div></div></div></div>
+		</div> <!--end OS-->
+
+		<div class="page-section animate" style="display:none" id="os2">
+			<div class="static-elements">
+				<!-- <div class="left-bottom-vertical">Dagadam - Think Beyond</div> -->
+				<!-- <div class="right-center">Dagadam - Think Beyond</div> -->
+
+			</div>
+			<div class="section-content">
+				<div class="section-info">
+					<p class="section-title">PERSONAL TRAINER</p>
+					<div class="section-slider">
+						<div class="slider">
+							<div class="slide">
+				<div class="content">
+					<p class="title">ACCURATE TRACKING FEATURES THAT WILL ENHANCE YOUR SPORT ACTIVITIES</p>
+					<p class="info">
+The watch was designed to fit an active lifestyle as well.&nbsp;&nbsp;With an incorporated GPS, heart rate monitor, pedometer, and accelerometer, you will have a clearer view of your performances and listen to your favorite songs, without having a phone on you.&nbsp;And, because of an aluminium 6082 case and dust and water resistant (IP67), you have a light and sturdy device.
+</p>
+				</div>
+			 </div>						</div>
+					</div>
+
+				</div>
+				<div class="section-image">
+					<img src="./Dagadam - Think Beyond_files/fata.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="page-section animate" style="display:none" id="technical2">
+				<div class="static-elements">
+					<div class="right-top"><!-- Dagadam - Think Beyond --></div>
+					<!-- <div class="left-center">DAGADAM - THINK BEYOND</div> -->
+				</div>
+				<div class="section-content">
+				<div class="section-info">
+					<div class="section-name"><span>SPECIFICATIONS</span></div>
+					<div class="section-desc">
+						<p class="title" >PRODUCT SPECIFICATIONS</p>
+						<p>Only the best materials are used for this watch, which are extremely durable and reliable, so you can enjoy the product on an indefinite term.</p>
+					</div>
+					<div class="tech-data-slider" role="toolbar">
+
+
+
+
+
+
+
+					<div class="tech-slide" tabindex="-1" role="option" aria-describedby="slick-slide20" style="">
+				<ul>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/display.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">DISPLAY</span>
+					<span class="desc">
+Spectrum Screen 44mm<br>
+3D Curved Gorilla Glass<br>
+400X400 Round Display<br>
+16,7 mil Colors - 1.4” Full Circular
+</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/memory.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">MEMORY</span>
+					<span class="desc">8GB Internal Memory<br>
+RAM 512MB
+</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/battery.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">BATTERY</span>
+					<span class="desc">
+450mAh<br>
+Wireless Charger<br>
+Fast Charging System<br>
+Up to 3 days
+</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/dimensions.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Dimensions</span>
+					<span class="desc">49.0mm x 49.0mm x 13.2mm</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/sensors.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Sensors</span>
+					<span class="desc">Heart rate sensor, Accelerometer, Gyroscope, Ambient Light, 'Sense' Tactile</span>
+				</div>
+			 </li>
+
+
+</ul>
+			 </div><div class="tech-slide" tabindex="-1" role="option" aria-describedby="slick-slide21" style="">
+				<ul>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/other.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Other Stuff</span>
+					<span class="desc">Speaker &amp; Microphone<br> Vibration Motor</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/materials.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Materials</span>
+					<span class="desc">Aluminium 6082
+(used in aircraft industry) </span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/chipset.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Chipset</span>
+					<span class="desc">D1 Ensemble<br>
+Arm - 1.2GHz</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/water.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Water resistant</span>
+					<span class="desc">30 Meters / IP67</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/conectivity.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Conectivity</span>
+					<span class="desc">WIFI 802.11 b/g/n<br> Bluetooth 4.1, GPS</span>
+				</div>
+			 </li>
+<li>
+				<div class="icon"><img src="./Dagadam - Think Beyond_files/compat.png" alt="">
+				</div>
+				<div class="info">
+					<span class="name">Compatibility</span>
+					<span class="desc">iOS, Android</span>
+				</div>
+			 </li>
+
+
+</ul>
+			 </div></div>
+				</div>
+				<div class="section-image">
+					<img src="./Dagadam - Think Beyond_files/ceas-tech2.png" alt="Only the best materials are used for this watch, which are extremely durable and reliable, so you can enjoy the product on an indefinite term.">
+				</div>
+				</div>
+			</div>
+		<div class="page-section animate" style="display:none;" id="founders">
+				<div class="static-elements">
+					<!-- <div class="right-center">DAGADAM - THINK BEYOND</div> -->
+					<div class="left-top">
+						<a href="http://dagadam.com/#subscribe">Subscribe Now - Get Your Watch</a>
+					</div>
+				</div>
+				<div class="section-name"><span>FOUNDERS</span></div>
+				<div class="section-desc">
+					<p class="title">OUR VISION</p>
+					<p>We believe that everything needs to be designed humanly enough to reach everybody's heart.
+Dagadam watch does it for us!</p>
+				</div>
+
+				<div class="founders">
+
+
+
+
+				<div class="founder" tabindex="-1" role="option" aria-describedby="slick-slide10" style="">
+				<div class="inner-content">
+					<img src="./Dagadam - Think Beyond_files/Dragos.jpg" alt="mandu dragos">
+					<div class="name">mandu dragos</div>
+					<div class="job-title">Chief Executive Officer</div>
+					<a href="mailto:mandu.dragos@dagadam.com" class="email-address" tabindex="0">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+							<path fill="#C2986B" d="M8.448 10.75c-.58.023-.846.738-.418 1.132l3.21 3.017-3.22 3.22c-.265.25-.272.672-.015.93.258.26.678.26.933-.004l3.25-3.25 1.315 1.242c.834.784 2.14.783 2.975 0l1.325-1.253 3.26 3.26c.256.264.675.266.934.006.257-.26.25-.68-.015-.93l-3.22-3.22 3.21-3.018c.632-.598-.265-1.546-.897-.948l-5.483 5.157c-.26.247-.932.245-1.192 0l-5.472-5.156c-.13-.124-.302-.19-.48-.183zM6.522 9.458H23.48c.37 0 .65.28.65.652v9.782c0 .372-.28.652-.65.652H6.52c-.372 0-.652-.28-.652-.652V10.11c0-.373.28-.653.652-.653zm0-1.305c-1.073 0-1.957.883-1.957 1.957v9.782c0 1.073.883 1.957 1.957 1.957H23.48c1.072 0 1.956-.884 1.956-1.958V10.11c0-1.074-.883-1.958-1.957-1.958H6.52zM15 1.304c7.57 0 13.696 6.124 13.696 13.696S22.57 28.696 15 28.696 1.304 22.57 1.304 15 7.43 1.304 15 1.304zM15 0C6.724 0 0 6.724 0 15s6.724 15 15 15 15-6.724 15-15S23.276 0 15 0z"></path>
+						</svg>
+					</a>
+				</div>
+			</div><div class="founder" tabindex="-1" role="option" aria-describedby="slick-slide11" style="">
+				<div class="inner-content">
+					<img src="./Dagadam - Think Beyond_files/Bogdan.jpg" alt="DARAGIU BOGDAN">
+					<div class="name">DARAGIU BOGDAN</div>
+					<div class="job-title">Chief Operating Officer </div>
+					<a href="mailto:daragiu@dagadam.com" class="email-address" tabindex="-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+							<path fill="#C2986B" d="M8.448 10.75c-.58.023-.846.738-.418 1.132l3.21 3.017-3.22 3.22c-.265.25-.272.672-.015.93.258.26.678.26.933-.004l3.25-3.25 1.315 1.242c.834.784 2.14.783 2.975 0l1.325-1.253 3.26 3.26c.256.264.675.266.934.006.257-.26.25-.68-.015-.93l-3.22-3.22 3.21-3.018c.632-.598-.265-1.546-.897-.948l-5.483 5.157c-.26.247-.932.245-1.192 0l-5.472-5.156c-.13-.124-.302-.19-.48-.183zM6.522 9.458H23.48c.37 0 .65.28.65.652v9.782c0 .372-.28.652-.65.652H6.52c-.372 0-.652-.28-.652-.652V10.11c0-.373.28-.653.652-.653zm0-1.305c-1.073 0-1.957.883-1.957 1.957v9.782c0 1.073.883 1.957 1.957 1.957H23.48c1.072 0 1.956-.884 1.956-1.958V10.11c0-1.074-.883-1.958-1.957-1.958H6.52zM15 1.304c7.57 0 13.696 6.124 13.696 13.696S22.57 28.696 15 28.696 1.304 22.57 1.304 15 7.43 1.304 15 1.304zM15 0C6.724 0 0 6.724 0 15s6.724 15 15 15 15-6.724 15-15S23.276 0 15 0z"></path>
+						</svg>
+					</a>
+				</div>
+			</div></div>
+			</div>
+		<div class="page-section animate" style="display:none" id="subscribe">
+			<div class="static-elements">
+				<!-- <div class="left-center">DAGADAM - THINK BEYOND</div> -->
+				<!-- <div class="right-top">Dagadam - Think Beyond</div> -->
+			</div>
+			<div class="section-name"><span>CHOOSE YOURS</span></div>
+
+			<div class="subscribe-section">
+				<div class="section-image">
+					<div class="main-image-container">
+						<a class="image-popup" href="./Dagadam - Think Beyond_files/Subscribe1.png">
+							<img src="./Dagadam - Think Beyond_files/Subscribe1.png" alt="">
+
+						</a>
+					</div>
+					<div class="gallery">
+						<div class="col-gallery">
+							<div class="image-container">
+								<a class="image-popup" href="./Dagadam - Think Beyond_files/Subscribe2.png"><img src="./Dagadam - Think Beyond_files/Subscribe2.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-gallery">
+							<div class="image-container">
+								<a class="image-popup" href="./Dagadam - Think Beyond_files/Subscribe3.png"><img src="./Dagadam - Think Beyond_files/Subscribe3.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-gallery">
+							<div class="image-container">
+								<a class="image-popup" href="./Dagadam - Think Beyond_files/Subscribe4.png"><img src="./Dagadam - Think Beyond_files/Subscribe4.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-info">
+					<div class="section-desc">
+						<p class="title">SUBSCRIBE NOW</p>
+						<p>A subscription will provide the latest infor about Dagadam watch and the opportunity to save up to $90</p>
+					</div>
+					<div class="subscribe-form">
+						<form action="http://dagadam.com/#" id="watch-form">
+							<div class="form-section band-silicon">
+								<div class="label">
+									<span>Silicone</span>
+								</div>
+								<div class="options">
+									<label>
+										<input type="radio" name="band-silicon" value="white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#F1F1F1" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="black">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#272727" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="green">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#2C5047" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="yellow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#F7CA4F" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="burgundy">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#9F2C3B" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="grey">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#A3A1A0" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="pink">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#DFC6C5" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-silicon" value="blue">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#3C3E60" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+								</div>
+							</div>
+							<div class="form-section band-leather">
+								<div class="label">
+									<span>leather</span>
+								</div>
+								<div class="options">
+									<label>
+										<input type="radio" name="band-leather" value="black">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#303030" cx="12.584" cy="12.584" r="12.584"></circle></svg>
+									</label>
+									<label>
+										<input type="radio" name="band-leather" value="grey">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#6B6B6B" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+									<label>
+										<input type="radio" name="band-leather" value="blue">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#36364F" cx="12.584" cy="12.584" r="12.584"></circle></svg>									</label>
+								</div>
+							</div>
+							<div class="form-section watch-color">
+								<div class="label">
+									<span>Case</span>
+								</div>
+								<div class="options">
+									<label>
+										<input type="radio" name="watch-color" value="silver">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#DBDBDB" cx="12.584" cy="12.584" r="12.584"></circle></svg>
+									</label>
+									<label>
+										<input type="radio" name="watch-color" value="black">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.168" height="25.168" viewBox="0 0 25.168 25.168"><circle fill="#2F2E2E" cx="12.584" cy="12.584" r="12.584"></circle></svg>
+									</label>
+
+
+								</div>
+							</div>
+							<button type="submit" form="watch-form" value="Submit" class="subscribe-popup">subscribe »</button>
+						</form>
+						<div class="signature">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-subscribe">
+				<div class="subscribe-form-container">
+					<div class="subscribe-form-modal">
+						<div class="close-subscribe-modal"></div>
+						<div class="info">
+							<p class="form-intro">choose yours</p>
+							<p class="form-title">subscribe now </p>
+							<p>A subscription will provide the latest infor about Dagadam watch
+								and the opportunity to save up to $90</p>
+							<p class="subscribe-watch"></p>
+						</div>
+						<div class="form">
+							<div id="mc_embed_signup">
+								<form action="http://dagadam.us13.list-manage.com/subscribe/post?u=2243b098b7719413c54ad8c86&amp;id=208886b722" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+									<input type="email" value="" placeholder="EMAIL" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
+									<input type="text" value="" placeholder="NAME" name="FNAME" class="" id="mce-FNAME">
+									<input type="text" value="" placeholder="COUNTRY" name="FCOUNTRY" class="" id="mce-FCOUNTRY">
+									<input type="text" value="" name="SWATCH" class="hidden" id="mce-SWATCH">
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2243b098b7719413c54ad8c86_208886b722" tabindex="-1" value=""></div>
+									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe-popup">
+
+								</form>
+							</div>
+						<script type="text/javascript" src="./Dagadam - Think Beyond_files/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='FCOUNTRY';ftypes[2]='text';fnames[3]='SWATCH';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+						<button class="close-modal">no, thanks!</button>
+
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+</div>
+
+<script type="text/javascript" src="./Dagadam - Think Beyond_files/script.min.js"></script>
+<script type="text/javascript" src="./Dagadam - Think Beyond_files/wp-embed.min.js"></script>
+
+
+
+<footer name="footer" id="footer">
+    <div class="logo-footer">
+		<p class="title" style="font-size: 40px; line-height: 40px; color: #FFFFFF">Contact Us</p>
+    </div>
+    <div class="footer-social-links">
+        <a target="_blank" href="https://twitter.com/dt_coin"  style='background:url(images/footer2.png) center center no-repeat; background-size:contain;'></a>
+        <a target="_blank" href="https://www.facebook.com/Dtcoin-2036709999896933" style='background:url(images/footer3.png) center center no-repeat; background-size:contain;'></a>
+		<a target="_blank"  style='background:url(images/footer1.png) center center no-repeat; background-size:contain;'></a>
+		<a  target="_blank"  style='display:none; background:url(images/footer1.png) center center no-repeat; background-size:contain;'><svg  width="25.477" height="22.436" viewBox="0 0 20.847 20.847"><path d="M17.81 2.018c2.018.053 3.027 1.198 3.037 3.438 0 .147-.005.3-.013.457-.09 1.9-1.502 4.486-4.245 7.76-2.83 3.43-5.23 5.147-7.2 5.156-1.227 0-2.245-1.05-3.062-3.152l-.858-2.88-.848-2.876C3.997 7.838 3.33 6.798 2.616 6.798c-.156 0-.697.304-1.626.91L0 6.538 1.536 5.26 3.046 4C4.4 2.914 5.43 2.328 6.137 2.24c.093-.01.187-.012.283-.012 1.448 0 2.353 1.04 2.708 3.124.198 1.188.362 2.154.495 2.896.13.744.237 1.262.323 1.557.48 1.97.995 2.96 1.55 2.968.426 0 1.082-.642 1.968-1.926.866-1.32 1.332-2.296 1.392-2.932.02-.13.026-.25.026-.362 0-.86-.474-1.29-1.418-1.29-.48 0-.99.102-1.537.3.98-3.022 2.864-4.535 5.65-4.545h.234z"></path></svg></a>
+        <a target="_blank" style="display: none"><svg  width="25.477" height="22.436" viewBox="0 0 20.091 17.545"><path d="M18.732 4.844c-.345-1.33-.837-1.84-2.027-2.024-.686-.098-3.9-.223-6.512-.223-2.614 0-5.865.125-6.552.223-1.19.184-1.905.695-2.25 2.024-.115.446-.345 2.892-.345 3.827v.206c0 .933.248 3.38.364 3.827.344 1.328 1.035 1.84 2.225 2.025.685.096 4 .222 6.612.222 2.614 0 5.915-.125 6.6-.222 1.19-.185 1.534-.697 1.877-2.025.117-.448.32-2.894.32-3.827V8.67c0-.934-.197-3.38-.312-3.826zm-10.9 7.084V5.562l6.18 3.107-6.18 3.258z"></path></svg></a>
+
+    </div>
+    <div class="menu-footer-container" style="display: none"><ul id="menu-footer" class="footer-menu"><li id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-176"><a href="http://dagadam.com/#about">About Dagadam</a></li>
+<li id="menu-item-177" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-177"><a href="http://dagadam.com/#design">Design</a></li>
+<li id="menu-item-178" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-178"><a href="http://dagadam.com/#os">Ticwear OS</a></li>
+<li id="menu-item-179" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-179"><a href="http://dagadam.com/#technical2">Specifications</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-180"><a href="http://dagadam.com/#founders">Founders</a></li>
+<li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-181"><a href="http://dagadam.com/#subscribe">Subscribe</a></li>
+</ul></div>    <div style="display:none" class="copyright">© 2017 DAGADAM. All Rights Reserved. <span class="quart"> Proudly Crafted by <a  target="_blank">data coin</a></span></div>
+</footer>
+
+
+
+</body></html>
